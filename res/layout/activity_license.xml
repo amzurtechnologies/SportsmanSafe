@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <TextView
+        android:id="@+id/licenseHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/mainnavbar2x"
+        android:text="License Locker" 
+        android:textSize="25sp"
+        android:textStyle="bold" 
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/licenseBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/licenseHeader"
+        android:background="@drawable/main" />
+
+    <TextView
+        android:id="@+id/licenseOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/licenseoverlay" />
+
+    <TextView
+        android:id="@+id/licenseSOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/sosicon2x" />
+
+    <TextView
+        android:id="@+id/licenseBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backbtn2x"
+        android:gravity="center"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/licenseAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/licenseBack"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/buttonadd2x" />
+
+</RelativeLayout>

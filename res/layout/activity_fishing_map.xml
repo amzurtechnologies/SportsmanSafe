@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/fishingMapBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/fishingsearchbg2x" 
+        android:text="Fishing"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/fishingMapBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/fishbackbtn2x"
+        android:text="Back"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/fishingMapLocationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fishingMapBackButton"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/fishingMapSearchIcon"
+        android:background="@drawable/fishloc2x" />
+
+    <TextView
+        android:id="@+id/fishingMapSearchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fishingMapLocationIcon"
+        android:layout_alignBottom="@+id/fishingMapLocationIcon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/fishsearch2x" />
+
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fishingMapBackground"
+        android:apiKey="AIzaSyCLmeyKgkl7lQyO-v8EB2rHCOBKlw90OvU"
+        android:clickable="true" >
+
+    </com.google.android.maps.MapView>
+
+    <TextView
+        android:id="@+id/huntingMapSOSIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/sosicon" />
+    
+    </RelativeLayout>

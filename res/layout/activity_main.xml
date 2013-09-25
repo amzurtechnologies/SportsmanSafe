@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/mainScreenHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mainnavbar2x" />
+
+    <TextView
+        android:id="@+id/mainScreenInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainScreenHeader"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:background="@drawable/infoicon2x" />
+
+    <TextView
+        android:id="@+id/mainScreenSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainScreenHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/settingsicon2x" />
+
+    <TextView
+        android:id="@+id/mainScreenBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainScreenHeader"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main" />
+
+    <TextView
+        android:id="@+id/mainScreenLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mainScreenBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/logo" />
+
+      <TextView
+          android:id="@+id/mainScreenHunting"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_below="@+id/mainScreenLogo"
+          android:layout_marginRight="14dp"
+          android:layout_toLeftOf="@+id/mainScreenFishing"
+          android:background="@drawable/huntingicon2x" />
+
+      <TextView
+          android:id="@+id/mainScreenFishing"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_above="@+id/mainScreenLicense"
+          android:layout_toLeftOf="@+id/mainScreenInfo"
+          android:background="@drawable/fishingicon2x" />
+
+      <TextView
+          android:id="@+id/mainScreenLicense"
+          android:layout_width="100dp"
+          android:layout_height="30dp"
+          android:layout_alignRight="@+id/mainScreenHunting"
+          android:layout_below="@+id/mainScreenHunting"
+          android:layout_marginTop="14dp"
+          android:background="@drawable/licenseicon2x" />
+
+      <TextView
+          android:id="@+id/mainScreenTrophies"
+          android:layout_width="100dp"
+          android:layout_height="30dp"
+          android:layout_alignBaseline="@+id/mainScreenLicense"
+          android:layout_alignBottom="@+id/mainScreenLicense"
+          android:layout_alignLeft="@+id/mainScreenFishing"
+          android:background="@drawable/trophyicon2x" />
+
+      <TextView
+          android:id="@+id/mainScreenSOS"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_alignLeft="@+id/mainScreenSettings"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/sosicon2x" />
+
+      <TextView
+          android:id="@+id/mainScreenHuntingPressed"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_above="@+id/mainScreenLicense"
+          android:layout_alignLeft="@+id/mainScreenHunting"
+          android:background="@drawable/huntingiconpressed2x"
+          android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/mainScreenFishingPressed"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_above="@+id/mainScreenLicense"
+          android:layout_toRightOf="@+id/mainScreenHunting"
+          android:background="@drawable/fishingiconpressed2x"
+          android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/mainScreenLicensePressed"
+          android:layout_width="100dp"
+          android:layout_height="30dp"
+          android:layout_alignBaseline="@+id/mainScreenLicense"
+          android:layout_alignBottom="@+id/mainScreenLicense"
+          android:layout_alignLeft="@+id/mainScreenLicense"
+          android:background="@drawable/licenseiconpressed2x"
+          android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/mainScreenTrophiesPressed"
+          android:layout_width="100dp"
+          android:layout_height="30dp"
+          android:layout_alignBaseline="@+id/mainScreenTrophies"
+          android:layout_alignBottom="@+id/mainScreenTrophies"
+          android:layout_toLeftOf="@+id/mainScreenInfo"
+          android:background="@drawable/trophyiconpressed2x"
+          android:visibility="invisible" />
+
+      <TextView
+          android:id="@+id/mainScreenSOSPressed"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_alignLeft="@+id/mainScreenSOS"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/sosiconpressed" 
+          android:visibility="invisible"/>
+
+</RelativeLayout>

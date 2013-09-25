@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/huntingMapBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/datepickerbuttonbackground2x" 
+        android:text="Hunting"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/huntingMapBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/huntbackbtn2x"
+        android:text="Back"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/huntingMapLocationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/huntingMapBackButton"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/huntingMapSearchIcon"
+        android:background="@drawable/locationicon2x" />
+
+    <TextView
+        android:id="@+id/huntingMapSearchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/huntingMapLocationIcon"
+        android:layout_alignBottom="@+id/huntingMapLocationIcon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/searchicon2x" />
+
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/huntingMapBackground"
+        android:apiKey="AIzaSyCLmeyKgkl7lQyO-v8EB2rHCOBKlw90OvU"
+        android:clickable="true" >
+
+    </com.google.android.maps.MapView>
+
+    <TextView
+        android:id="@+id/huntingMapSOSIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/sosicon" />
+    
+    </RelativeLayout>

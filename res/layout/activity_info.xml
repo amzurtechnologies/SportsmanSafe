@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/infoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/mainnavbar2x"
+        android:text="Info"
+        android:textSize="30sp"
+        android:textStyle="bold" 
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/infoBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/infoHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/backbtn2x"
+        android:text="Back" 
+        android:textSize="20sp"
+        android:textStyle="bold" 
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/infoBodyBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/infoHeader"
+        android:background="@drawable/main" />
+
+    <TextView
+        android:id="@+id/infoAbout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/infoInviteFriends"
+        android:layout_below="@+id/infoInviteFriends"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/filteroptionbtn2x"
+        android:gravity="center"
+        android:text="About"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoTermsOfUse"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/infoAbout"
+        android:layout_below="@+id/infoAbout"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/filteroptionbtn2x"
+        android:gravity="center"
+        android:text="Terms Of Use"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoContactUs"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/infoTermsOfUse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/filteroptionbtn2x"
+        android:gravity="center"
+        android:text="Contact Us"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoInviteFriends"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/infoContactUs"
+        android:layout_alignTop="@+id/infoBodyBg"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/filteroptionbtn2x"
+        android:gravity="center"
+        android:text="Invite Friends"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoRateApp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/infoContactUs"
+        android:layout_below="@+id/infoContactUs"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/filteroptionbtn2x"
+        android:gravity="center"
+        android:text="Rate App"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoSOSImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/sosicon2x" />
+    
+</RelativeLayout>
